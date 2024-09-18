@@ -6,6 +6,7 @@
 }
 section {
   min-height: 500px;
+  padding: 48px 16px;
 }
 
 p,
@@ -29,14 +30,12 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 120%;
-
 }
 
 h3 {
   font-size: 28px;
   font-weight: 500;
   line-height: 120%;
-
 }
 
 h5 {
@@ -44,7 +43,6 @@ h5 {
   font-size: 16px;
   line-height: 30px;
   line-height: 150%;
-
 }
 
 h6 {
@@ -66,6 +64,7 @@ footer {
 @media (min-width: 768px) {
   section {
     min-height: 600px;
+    padding: 64px 32px;
   }
 
   h1 {
@@ -75,10 +74,10 @@ footer {
   h2 {
     font-size: 48px;
   }
-  h3{
+  h3 {
     font-size: 32px;
   }
-  h5{
+  h5 {
     font-size: 18px;
   }
 }
@@ -86,6 +85,7 @@ footer {
 @media (min-width: 1200px) {
   section {
     min-height: 700px;
+    padding: 70px 32px;
   }
   h1 {
     font-size: 90px;
@@ -93,10 +93,10 @@ footer {
   h2 {
     font-size: 54px;
   }
-  h3{
+  h3 {
     font-size: 38px;
   }
-  h5{
+  h5 {
     font-size: 20px;
   }
 }
