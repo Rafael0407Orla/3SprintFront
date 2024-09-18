@@ -78,7 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 32px;
   width: 100%;
   height: auto;
 }
@@ -133,6 +133,9 @@ h5 {
   }
   .section-about-textContainer{
     gap: 32px;
+  }
+  .coluna{
+    gap: 42px;
   }
 }
 
