@@ -5,10 +5,6 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 section {
     min-height: 780px;
 }
@@ -55,7 +51,7 @@ h6 {
 footer {
     color: #fff;
     background-color:
-        #04C4D9;
+    #04C4D9;
     padding: 46px 0;
     width: 100%;
     display: flex;
@@ -64,3 +60,4 @@ footer {
     align-items: center;
 
 }
+
