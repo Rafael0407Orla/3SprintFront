@@ -4,29 +4,25 @@ section {
   padding: 24px 12px;
 }
 
-section:nth-of-type(1) {
+.section-hero {
   background: url("../Assets/Section1BG.png") no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 120px;
 }
 
-section:nth-of-type(1) strong {
+.section-hero strong {
   z-index: 999999999999;
   color: #f7ea3d;
   text-align: center;
   text-shadow: 0 0 40px #f7eb3dda;
 }
 
-section:nth-of-type(1) h1 {
- 
-  z-index: 999999999999;
-  color: #29f2f2;
+.section-hero h1 {
+   color: #29f2f2;
   text-align: center;
   text-shadow: 0 0 40px #29f2f2;
 }
