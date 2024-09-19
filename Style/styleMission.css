@@ -5,11 +5,39 @@ body{
     background-color: black;
 }
 
+.formula-e{
+    background-color: rgba(var(--green-bright), 0.8);
+    box-shadow: 0 0 8px 0  rgba(var(--green-bright), 0.5);
 
 
+}
+
+.sustentabilidade{
+    background-color: rgba(var(--secondary), 0.8);
+    box-shadow: 0 0 8px 0  rgba(var(--secondary), 0.5);
+
+}
+.saude{
+    background-color: rgba(var(--tertiary), 0.8);
+    box-shadow: 0 0 8px 0  rgba(var(--tertiary), 0.5);
+
+}
+
+.section-desafio{
+    padding-top: 120px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(100px, 400px);
+    grid-template-rows: auto repeat(3, 400px);
+    justify-content: center;
+}
+
+.section-desafio-title{
+    color: rgb(var(--white));
+    text-align: center;
+}
 .card-desafio{
     color: rgba(var(--white));
-    background-color: rgba(var(--green-bright), 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,3 +72,32 @@ body{
 .card-desafio-button{
     width: 100%;
 }
+@media (min-width: 768px) {
+    .section-desafio{
+        grid-template-columns: repeat(2, minmax(100px, 400px));
+        grid-template-rows: auto repeat(3, 400px);
+    }
+    .section-desafio-title{
+        grid-column: span 2;
+    }
+    .card-desafio:nth-of-type(3) {
+        grid-column: span 2;
+
+    }
+    
+  }
+  
+  @media (min-width: 1200px) {
+    .section-desafio{
+        grid-template-columns: repeat(3, minmax(100px, 400px));
+        grid-template-rows: auto repeat(3, 500px);
+    }
+    .section-desafio-title{
+        grid-column: span 3;
+    }
+    .card-desafio:nth-of-type(3) {
+        grid-column: span 1;
+
+    }
+  }
+  
