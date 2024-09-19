@@ -117,6 +117,13 @@ h5 {
   height: 80px;
 }
 
+@media (max-width: 768px) {
+  .section-hero-title{
+    font-size: 10vw;
+  }
+  
+}
+
 @media (min-width: 768px) {
   .missionSectionCard {
     max-width: 700px;
