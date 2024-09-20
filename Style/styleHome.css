@@ -1,129 +1,158 @@
-section:nth-of-type(1) {
-    background: url('../Assets/Section1BG.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+@import url("./style.css");
+
+
+.section-hero {
+  background: url("../Assets/Section1BG.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-hero strong {
+  z-index: 999999999999;
+  color: #f7ea3d;
+  text-align: center;
+  text-shadow: 0 0 40px #f7eb3dda;
+}
+
+.section-hero h1 {
+   color: #29f2f2;
+  text-align: center;
+  text-shadow: 0 0 40px #29f2f2;
+}
+
+
+.section-about {
+  color: white;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("../Assets/Section2BG.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-about-textContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 120px;
-}
-
-section:nth-of-type(1) strong {
-    font-size: 90px;
-    z-index: 999999999999;
-    color: #F7EA3D;
-    text-align: center;
-    text-shadow: 0 0 40px #f7eb3dda;
-
-}
-
-section:nth-of-type(1) h1 {
-    font-size: 90px;
-    z-index: 999999999999;
-    color: #29F2F2;
-    text-align: center;
-    text-shadow: 0 0 40px #29F2F2;
-
-}
-
-section:nth-of-type(1) img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 650px;
-
-}
-
-section:nth-of-type(2) {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0 80px;
-    position: relative;
-    background: url('../Assets/Section2BG.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-section:nth-of-type(2) img {
-    top: -50%;
-    left: 0;
-    position: absolute;
-    height: auto;
-}
-
-section:nth-of-type(2) h1 {
-    position: absolute;
-    top: 30px;
-    left: 70px;
-    z-index: 10;
-}
-
-
-section:nth-of-type(3) {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    position: relative;
+    gap: 16px;
     text-align: center;
 }
 
-section:nth-of-type(3) p {
-    position: absolute;
-    color: white;
-    font-size: 160px;
-    font-weight: 900;
-    line-height: 170px;
-    font-style: italic;
+
+
+.section-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
 }
 
-section:nth-of-type(4) {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
+.section-message-title {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: 900;
+  line-height: 120%;
+  font-style: italic;
 }
 
-section:nth-of-type(4) h3,
-h5 {
-    color: white;
+.missionSection {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: black;
 }
 
 .coluna {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    width: 50%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: auto;
 }
 
-.line_glow {
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.5)) drop-shadow(0 0 30px rgba(0, 255, 255, 0.5)) drop-shadow(0 0 40px rgba(0, 255, 255, 0.5));
-
-
-
+.missionSectionImage {
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+.missionSection h3,
+h5 {
+  color: white;
 }
 
-.container {
-    display: flex;
+.section-message-line_glow {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5))
+    drop-shadow(0 0 20px rgba(0, 255, 255, 0.5))
+    drop-shadow(0 0 30px rgba(0, 255, 255, 0.5))
+    drop-shadow(0 0 40px rgba(0, 255, 255, 0.5));
+}
+
+.missionSectionCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 600px;
+}
+
+.mission-section-icons {
+  width: 80px;
+  height: 80px;
+}
+
+@media (min-width: 768px) {
+  .missionSectionCard {
+    max-width: 700px;
+  }
+  .missionSectionImage {
+    max-width: 700px;
+  }
+  .mission-section-icons {
+    width: 100px;
+    height: 100px;
+  }
+  .section-about{
+    gap: 50px;
+  }
+  .section-about-textContainer{
+    gap: 32px;
+  }
+  .coluna{
+    gap: 42px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .missionSection {
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-    max-width: 520px;
-}
-
-.imagens-section3 {
+  }
+  .mission-section-icons {
     width: 120px;
     height: 120px;
+  }
+  .section-about{
+    gap: 100px;
+  }
+  .section-about-textContainer{
+    gap: 40px;
+    max-width: 1000px;
+  }
 }
