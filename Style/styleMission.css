@@ -74,8 +74,11 @@ h1,h2{
 .card-desafio-button {
   width: 100%;
   border-radius: 15px;
-  border: none
-  
+  border: rgba(var(--white),0.5) solid 1px;
+  height: 40px;
+  color: rgba(var(--white),0.5)
+
+
                                                                                                                                                                 
 }
 
@@ -132,7 +135,7 @@ h1,h2{
 @media (min-width: 768px) {
   .section-desafio {
     grid-template-columns: repeat(2, minmax(100px, 400px));
-    grid-template-rows: auto repeat(2, 400px);
+    grid-template-rows: repeat(2, auto);
   }
   .section-desafio-title {
     grid-column: span 2;
