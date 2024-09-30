@@ -137,6 +137,9 @@ h2 {
   .section-rewards {
     gap: 60px;
   }
+  .card-desafio-description {
+    margin: auto 0;
+  }
 }
 
 @media (min-width: 1200px) {
